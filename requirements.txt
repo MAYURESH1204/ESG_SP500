@@ -1,0 +1,8 @@
+seaborn
+Flask
+gunicorn
+yfinance
+numpy
+pandas
+matplotlib
+time
