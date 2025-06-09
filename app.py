@@ -51,7 +51,7 @@ def index():
                     print(f"Error fetching {ticker}: {e}")
                     return np.nan
 
-            subset = sp500.head(50).copy()
+            subset = sp500.head(30).copy()
             subset['1Y_Return'] = subset['Ticker'].apply(get_stock_return)
             subset = subset.dropna(subset=['1Y_Return'])
 
